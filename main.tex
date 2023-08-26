@@ -1,0 +1,291 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Found from: https://github.com/rizhu/Resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeItemBF}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \emph{#2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ayati Sharma} \\ \vspace{1pt}
+    \small +1 (341) 766-9357 $|$ \href{mailto:ayati.sharma@berkeley.edu}{\underline{ayati.sharma@berkeley.edu}} $|$
+    \href{https://www.linkedin.com/in/ayati17/}{\underline{linkedin.com/in/ayati17/}} $|$
+    \href{https://github.com/ayati17/}{\underline{github.com/ayati17}}
+    
+
+    %https://scholar.google.com/citations?hl=en&user=I9B7YI0AAAAJ
+\end{center}
+\vspace{-15pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+    %\resumeSubheading
+            %{University of California, Berkeley}{}{B.A. Computer Science \& B.A. Cognitive Science}{May 2025}
+            %\resumeItemListStart
+                %\resumeItemBF{Research}{Machine Learning for CS Education}
+           % \resumeItemListEnd
+    %\resumeSubheading
+    %{EECS Honors: Concentration in Computational Neuroscience}
+    \resumeSubheading
+        {University of California, Berkeley}{\textbf{GPA: 3.85}}
+        {B.A. Computer Science, B.A. Cognitive Science}{May 2025}
+        
+        
+        \resumeItemListStart
+            \resumeItemBF{Honors}{EECS Honors Program: Concentration in Computational Neuroscience, Upsilon Pi Epsilon (CS Honor Society), Junior Researcher at The New York Academy of Sciences, Honors to Date Fall '22 \&  Spring '22}
+            \resumeItemBF{Courses}{Database Systems, Data Structures \& Algorithms, Engineering Optimization, Data Science, Computer Architecture, Full Stack Development,  Multivariable Calculus, Linear Algebra, Discrete Math \& Probability Theory, Circuit Design \& Theory, Linguistic Science, Molecular Therapeutics}
+            
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+\resumeSubHeadingListStart
+\resumeSubheading
+    {Berkeley Speech Group at Berkeley Artificial Intelligence Research (BAIR)}{Berkeley, CA}{Undergraduate CS Research Assistant}{August 2023 - Present}
+    \resumeItemListStart
+        \resumeItem{Developing machine learning algorithms for spoken language assistive technology}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {iSono Health}{South San Francisco, CA}{ML/Software Engineering Intern }{May 2023 - Aug 2023}
+    \resumeItemListStart
+        \resumeItem{Building Flask + Dash-based web application for breast imaging  annotation. Developing API to interface with DVC data registry and medical imaging tools. Designing and developing software to parse through \& map patient database information.  Developing machine learning triage models for breast cancer risk classification.}
+        %Implementing Airflow DAG for lesion detection data pipeline}%
+    \resumeItemListEnd
+
+
+\resumeSubheading
+    {UC Berkeley EECS Department}{Berkeley, CA}{Head Teaching Assistant, TA, Tutor, Academic Intern – CS 61B: Data Structures \& Algorithms}{Jan 2022 – Present}
+    \resumeItemListStart
+        
+        % \resumeItem{Coordinate recruitment, onboarding, prep assignments, check-ins, socials, and logistics for 120+ academic interns}
+        % \resumeItem{Holding multiple weekly discussions, labs, and office hours \& answered forum questions in class of 2000+ students}
+        % \resumeItem{Maintaining course software \& website, developing \& reviewing assignments, proctoring \& grading exams}
+        \resumeItem{Organizing course logistics through heading exam creation, managing proctoring and grading, intern recruitment, content evaluation, lecture and student support. Conducting weekly office hours \& forum for debugging \& conceptual issues, leading small-group tutoring, directing review sessions for class of 1700+ students}
+        %\resumeItem{Conducting weekly office hours \& forum for debugging and conceptual issues, leading small-group tutoring, directing review sessions for class of 1700+ students}
+        %\resumeItem{Average teaching effectiveness rating of \textbf{4.52/5.00} by students, won \textbf{Outstanding Graduate Student Instructor Award (2022)}, awarded to \textbf{top 10\% of TAs university-wide}, and won \textbf{Outstanding Academic Intern Award (2020)}, awarded to \textbf{top 7\% of CS 61A Spring 2020 interns}}
+    \resumeItemListEnd
+    
+\resumeSubheading
+    {The Conboy Lab at Berkeley Engineering}{Berkeley, CA}{Software Development Intern}{March 2023 - Present}
+    \resumeItemListStart
+        \resumeItem{Developing a data processing pipeline to conduct health assay analysis regarding aging. Working under Cameron Kato and Dr. Irina Conboy.}
+        %\resumeItem{Developing a data processing pipeline to conduct health assay analysis to determine the mechanism governing oxytocin and ALK5-inhibitor induced depletion of senescent cell levels. Working under Cameron %Kato and Dr. Irina Conboy.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Computer Science Mentors}{Berkeley, CA}{Senior Mentor - Data Structures and Algorithms}{August 2022 – Present}
+    \resumeItemListStart
+        \resumeItem{Leading weekly tutoring and review sessions of 4-5 students with minilectures and problem-based worksheets. Concepts taught include asymptotic analysis, data structures, sorting and search algorithms. Teaching the women’s affinity section. Advising junior mentors on pedagogical techniques weekly through direct feedback, leading structured workshops, section shadowing. Organizing and conducting exam-review sessions for 1700+ students.}
+        %\resumeItem{Advising junior mentors on pedagogical techniques weekly through direct feedback, leading structured workshops, section shadowing. Organizing and conducting exam-review sessions for 1700+ students.}%
+    \resumeItemListEnd
+
+
+
+% \resumeSubheading
+%     {University of California, Berkeley}{Berkeley, CA}{Undergraduate Research Assistant - SLICE Lab (advised by Professor James Demmel)}{August 2021 -- Present}
+%     \resumeItemListStart
+%         \resumeItem{Lead research group exploring techniques for communication-reduction and privacy-preservation via \textbf{randomized linear algebra}, and \textbf{differential privacy} in \textbf{federated learning} settings}
+%         \resumeItem{\textbf{\underline{\href{https://github.com/rizhu/rayleaf-source}{RayLEAF}}}: Design, develop, and optimize \textbf{fast and scalable} benchmark with \textbf{flexible APIs} using \textbf{PyTorch} and \textbf{Ray}, achieving over \textbf{60x} speedup over existing frameworks}
+%     \resumeItemListEnd
+    
+% \resumeSubSubheading
+%     {Head Teaching Assistant (TA) - CS 70 Discrete Mathematics and Probability Theory}{June 2020 -- Present}
+%     \resumeItemListStart
+%         \resumeItem{Manage \textbf{over 50 members of course staff}, teach discussion sections of \textbf{40 students}, and coordinate course logistics with 4 other head TAs and 2 professors for a class of \textbf{over 850 students}}
+%         \resumeItem{Rated \textbf{4.7 / 5} on average by students and won \textbf{Outstanding Graduate Student Instructor Award (2021)}, awarded to \textbf{top 10\% of TAs university-wide}}
+%     \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+    % \resumeSubheading
+    % {BlueConduit}{Ann Arbor, MI (Remote)}{Contract Software Developer}{August 2021 – January 2022}
+    \resumeProjectHeading
+    {\textbf{CheRMiT} (Machine Learning Research in Computational Biology at Berkeley iGEM)}{Jan 2022 - Present}
+    \resumeItemListStart
+        \resumeItem{Collaborating to develop a natural language processing pipeline that extracts chemical reaction data from scientific literature using few-shot learning on GPT and validates reactions through cheminformatics.}
+        %\resumeItem{Collaborating to build a cheminformatics pipeline on ChemAxon to validate potential chemical reactions. Building NLP classification model on BERT, gathering training data from BRENDA and PubMed, writing a script with RegEx in Python to tag chemical entities in the training data.}
+        %\resumeItem{Used Django REST framework \& JSON web tokens to handle user authentication and Mapbox API for visualizations}
+    \resumeItemListEnd
+
+    % \resumeSubheading
+    %     {Relativity Space}{Long Beach, CA (Remote)}{Contract Software Developer}{February 2021 – May 2021}
+    \resumeProjectHeading
+    {\textbf{Gitlet}}{April 2022}
+        \resumeItemListStart
+            \resumeItem{Developed a version-control system in Java. Utilized cryptographic hashing, file persistence, regex, optimised data structures, and graph traversals.}
+            %\resumeItem{Built APIs, sockets, React dashboards, D3 graphs with custom absolute/relative timeranges \& multiple data streams}
+            %\resumeItem{Emphasized improved performance over Grafana through backend data caching and shared global state in frontend}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Enigma}}{February 2022}
+        \resumeItemListStart
+            \resumeItem{Developed a digital version of the Enigma encryption machine using object-oriented design, file I/O, string manipulation enabling encryption/decryption of messages with various possible initial configurations of the machine. }
+            %\resumeItem{Built APIs, sockets, React dashboards, D3 graphs with custom absolute/relative timeranges \& multiple data streams}
+            %\resumeItem{Emphasized improved performance over Grafana through backend data caching and shared global state in frontend}
+        \resumeItemListEnd
+
+    %\resumeProjectHeading
+    %{\textbf{ok-disc} $|$ \href{https://github.com/LarynQi/ok-disc/}{\underline{github.com/LarynQi/ok-disc/}}}{July 2020 – January 2021}
+    %\resumeItemListStart
+        %\resumeItem{A lightweight Python autograder to help students debug Python, Scheme, and SQL code during virtual discussions}
+       % \resumeItem{Simple CLI for running test cases and displaying expected \& actual output with support for multiple languages}
+        %\resumeItem{Used by \textbf{330+} UC Berkeley intro CS students through Computer Science Mentors, a tutoring student organization}
+    %\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\definecolor{dullblue}{RGB}{150, 149, 237}
+\resumeSubHeadingListStart
+
+    % \resumeSubheading
+    % {BlueConduit}{Ann Arbor, MI (Remote)}{Contract Software Developer}{August 2021 – January 2022}
+    \resumeProjectHeading
+    {\textbf{Common Genetic Signatures of Alzheimer’s in People with Down syndrome}} {July 2019 – Nov 2020}
+    \resumeItemListStart
+        \resumeItem{Paper accepted and presented at the Federation of European Neuroscience Societies (FENS) Forum 2020. Co-authored as a genomics and data science research assistant to Dr. Anna Delprato \& Dr. Wim E. Crusio.
+        \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7871416/}{\textcolor{dullblue}{[Paper]}}
+        }
+        %\resumeItem{Collaborating to build a cheminformatics pipeline on ChemAxon to validate potential chemical reactions. Building NLP classification model on BERT, gathering training data from BRENDA and PubMed, writing a script with RegEx in Python to tag chemical entities in the training data.}
+        %\resumeItem{Used Django REST framework \& JSON web tokens to handle user authentication and Mapbox API for visualizations}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+
+\begin{itemize}[leftmargin=0.05in, label={}]
+    \item{
+    
+    \textbf{Languages}: Python, Java, C, SQL, PostgresQL, JavaScript, RISC-V, HTML/CSS, Scheme
+    
+    \textbf{Tools \& Frameworks}: Git, DVC, Docker, Airflow, Unix, MongoDB, Dash, Flask, Bootstrap, React Native, Pandas, NumPy, Plotly, scikit-image, scikit-learn, ITK-Snap, Figma}
+\end{itemize}
+
+\end{document}
